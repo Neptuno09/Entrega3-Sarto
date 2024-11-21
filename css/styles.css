@@ -96,60 +96,76 @@
   display: block;
 }
 
+aside {
+  padding-bottom: 20px;
+}
+
 @media (max-width: 576px) {
   .search-container {
-    flex-direction: row;
-    align-items: stretch;
+      flex-direction: rown; /* Coloca el campo de búsqueda y el botón uno debajo del otro */
+      align-items: stretch;  /* Asegura que el input y el botón ocupen todo el ancho */
   }
-  .search-container .search-button {
-    width: 15%;
+  .search-button {
+      width: 15%; /* Hace que el botón ocupe todo el ancho disponible en pantallas pequeñas */
   }
-  .search-container .search-input {
-    width: 70%;
+  .search-input {
+      width: 70%; /* Hace que el input ocupe todo el ancho disponible en pantallas pequeñas */
   }
+
   .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
+      grid-template-columns: repeat(2, 1fr);  /* Mostrar 2 productos por fila */
+      padding: 1rem;  /* Reducir el padding */
   }
-  .product-grid .product-card {
-    margin: 0;
+
+  .product-card {
+      margin: 0;  /* Eliminar márgenes */
   }
-  .product-grid .product-title {
-    font-size: 16px;
+
+  .product-title {
+      font-size: 16px;  /* Reducir tamaño de fuente en títulos */
   }
-  .product-grid .product-price {
-    font-size: 14px;
+
+  .product-price {
+      font-size: 14px;  /* Reducir tamaño de fuente en precios */
   }
-  .product-grid .no-image {
-    height: 120px;
+
+  .no-image {
+      height: 120px;  /* Reducir altura de la imagen de reemplazo */
   }
   .logo {
-    width: 120px;
+      width: 200px;
   }
 }
+
+/* Media Query para dispositivos medianos (tabletas) */
 @media (min-width: 577px) and (max-width: 768px) {
   .search-container {
-    width: 80%;
+      width: 80%;  /* La barra de búsqueda ocupa el 80% del ancho */
   }
+
   .product-grid {
-    grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);  /* Mostrar 3 productos por fila */
   }
+
   .product-title {
-    font-size: 17px;
+      font-size: 17px;  /* Reducir tamaño de fuente en títulos */
   }
+
   .product-price {
-    font-size: 15px;
+      font-size: 15px;  /* Reducir tamaño de fuente en precios */
   }
   .logo {
-    width: 160px;
+      width: 160px;
   }
 }
+
+/* Media Query para dispositivos grandes (pantallas de escritorio) */
 @media (min-width: 1200px) {
   .product-grid {
-    grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5, 1fr);  /* Mostrar 5 productos por fila */
   }
   .logo {
-    width: 250px;
+      width: 250px;
   }
 }
 
