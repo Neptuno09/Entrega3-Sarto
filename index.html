@@ -43,6 +43,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="html/blog.html">Blog</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/catalog.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/info.html">Tutoriales</a>
+                    </li>
                 </ul>
                 
     
@@ -52,7 +58,7 @@
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#sobreNosotrosModal">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactoModal">Contacto</a>
+                        <a class="nav-link" href="./html/contact.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -76,41 +82,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Modal de Contacto -->
-    <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactoLabel">Contacto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="https://formsubmit.co/ulinahsar2@gmail.com" method="POST"> <!-- NO FUNCIONA -->
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                        </div>
-                        <!-- Campo oculto para evitar el reenvío del correo al cerrar el modal -->
-                        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html"> <!-- Página de agradecimiento -->
-                        <input type="hidden" name="_captcha" value="false"> <!-- Desactivar captcha -->
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary" form="contactoForm">Enviar correo</button> <!-- Asocias el botón de envío con el formulario -->
                 </div>
             </div>
         </div>
