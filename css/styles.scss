@@ -37,6 +37,14 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+.card {
+  background-color: #fff;
+  border: 1px solid $text-secondary-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  @include transition(transform, 0.2s);
+}
+
 // Dropdown
 .dropdown {
   &:hover {
@@ -103,16 +111,17 @@ body {
 
   .product-card {
     @extend .card;
-    background-color: #fff;
-    border: 1px solid $text-secondary-color;
-    border-radius: $border-radius;
-    overflow: hidden;
-    @include transition(transform, 0.2s);
-
+  
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     }
+  
+    .product-info {
+      text-align: center;
+      padding: 15px;
+    }
+  }
 
     .product-image {
       width: 100%;
@@ -145,7 +154,6 @@ body {
       }
     }
   }
-}
 
 // Navbar
 .navbar {
