@@ -1,15 +1,15 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   color: #333;
-  font-family: "Arial", sans-serif;
 }
 
 .card, .product-grid .product-card {
   background-color: #fff;
-  border: 1px solid #888;
+  border: 1px solid #c8c8c8;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -27,7 +27,7 @@ body {
   padding: 10px;
 }
 .dropdown .dropdown-menu li:hover {
-  background-color: #e57373;
+  background-color: #ffffff;
 }
 .dropdown .dropdown-menu li:hover {
   color: white;
